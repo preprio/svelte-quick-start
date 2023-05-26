@@ -1,38 +1,49 @@
-# create-svelte
+# svelte-quick-start
+The Svelte quick start project launches a blog app with content from Prepr.
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## Setup
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
+Make sure to install the dependencies:
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+# npm
+npm install
 ```
 
-## Developing
+## Add the environment file 
+Copy the .env.example file in this directory to .env (which will be ignored by Git) by running the following command: 
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+```bash
+cp .env.example .env
+```
+
+## Update the environment file
+In the .env file replace `<YOUR-ACCESS-TOKEN>` with the Prepr access token from your environment with demo content.
+
+## Development Server
+
+Start the development server.
 
 ```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+## Production
 
-To create a production version of your app:
+Build the application for production:
 
 ```bash
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+You can preview the production build with:
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+```bash
+npm run preview
+```
+
+Check out the [deployment documentation](https://kit.svelte.dev/docs/building-your-app) for more information.
+
+## The end result
+
+![blog site end result](https://assets-site.prepr.io//5oz8w28ybxje-screenshot-2023-05-10-at-111353.png)
