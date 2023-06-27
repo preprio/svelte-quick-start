@@ -1,7 +1,7 @@
-# svelte-quick-start
+# Svelte Quick Start
 The Svelte quick start project launches a blog app with content from Prepr.
 
-[Stackblitz demo](https://stackblitz.com/edit/svelte-quick-start)
+Check out the [Stackblitz demo](https://stackblitz.com/edit/svelte-quick-start) for zero installation.
 
 ## Setup
 
