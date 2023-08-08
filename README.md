@@ -12,8 +12,8 @@ Make sure to install the dependencies:
 npm install
 ```
 
-## Add the environment file 
-Copy the .env.example file in this directory to .env (which will be ignored by Git) by running the following command: 
+## Add the environment file
+Copy the .env.example file in this directory to .env (which will be ignored by Git) by running the following command:
 
 ```bash
 cp .env.example .env

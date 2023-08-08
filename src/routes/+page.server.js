@@ -1,5 +1,5 @@
 import prepr from '$lib/prepr'
-import GetArticles from '$lib/queries/getArticles'
+import GetArticles from '$lib/queries/get-articles'
 
 export async function load() {
     const response = await prepr(GetArticles)
