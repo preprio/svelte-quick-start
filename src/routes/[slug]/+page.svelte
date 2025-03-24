@@ -3,15 +3,15 @@
 </script>
 
 <svelte:head>
-	<title>{data.article.title}</title>
+	<title>{data.post.title}</title>
 </svelte:head>
 
 <div>
 	<h1>
-		{data.article.title}
+		{data.post.title}
 	</h1>
 
-	{#each data.article.content as content}
+	{#each data.post.content as content}
 		<div>
 			{#if content.__typename === 'Assets'}
 				<img src="{content.items[0].url}" width="300" height="250"/>

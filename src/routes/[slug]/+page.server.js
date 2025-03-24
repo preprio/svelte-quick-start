@@ -1,12 +1,12 @@
 import prepr from '$lib/prepr'
-import getArticleDetail from '$lib/queries/get-article-detail'
+import getPostBySlug from '$lib/queries/get-post-by-slug.js'
 
 export async function load({ params }) {
-    const response = await prepr(getArticleDetail, {slug: params.slug})
+    const response = await prepr(getPostBySlug, {slug: params.slug})
 
     const { data } = await response.json()
 
     return {
-        article: data.Article
+        post: data.Post
     }
 }

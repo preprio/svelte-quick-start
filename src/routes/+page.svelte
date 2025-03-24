@@ -12,9 +12,9 @@
 	</h1>
 
 	<ul>
-		{#each data.articles as article}
+		{#each data.posts as post}
 			<li>
-				<a href="{article._slug}">{article.title}</a>
+				<a href="{post._slug}">{post.title}</a>
 			</li>
 		{/each}
 	</ul>
