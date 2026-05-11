@@ -1,0 +1,21 @@
+name: Dependabot CI & Auto-Merge
+
+on:
+  pull_request:
+
+jobs:
+  build:
+    if: github.actor == 'dependabot[bot]'
+    uses: preprio/.github/.github/workflows/node-build.yml@main
+    with:
+      node-version: "20"
+      package-manager: "npm"
+      build-command: "npm run build"
+      run-tests: true
+      test-command: "npm run check"
+
+  auto-merge:
+    needs: build
+    if: github.actor == 'dependabot[bot]'
+    uses: preprio/.github/.github/workflows/dependabot-auto-merge.yml@main
+    secrets: inherit
