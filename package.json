@@ -10,7 +10,6 @@
 		"prepare": "svelte-kit sync || echo ''"
 	},
 	"devDependencies": {
-<<<<<<< Updated upstream
 		"@fontsource/fira-mono": "^5.2.7",
 		"@neoconfetti/svelte": "^2.2.2",
 		"@sveltejs/adapter-auto": "^3.3.1",
@@ -21,15 +20,7 @@
 		"typescript": "^6.0.3",
 		"vite": "^8.0.10"
 	},
-	"type": "module",
 	"overrides": {
 		"cookie": "^0.7.0"
-=======
-		"@sveltejs/adapter-auto": "^7.0.1",
-		"@sveltejs/kit": "^2.57.0",
-		"@sveltejs/vite-plugin-svelte": "^7.0.0",
-		"svelte": "^5.55.2",
-		"vite": "^8.0.7"
->>>>>>> Stashed changes
 	}
 }
