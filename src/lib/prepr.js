@@ -1,4 +1,3 @@
-
 import { PREPR_ENDPOINT } from '$env/static/private'
 
 const prepr = async (query, variables) => {
