@@ -13,12 +13,12 @@
 		"@fontsource/fira-mono": "^5.2.7",
 		"@neoconfetti/svelte": "^2.2.2",
 		"@sveltejs/adapter-auto": "^3.3.1",
-		"@sveltejs/kit": "^2.59.1",
+		"@sveltejs/kit": "^2.60.1",
 		"@types/cookie": "^1.0.0",
-		"svelte": "^5.55.5",
+		"svelte": "^5.55.7",
 		"svelte-check": "^3.8.6",
 		"typescript": "^6.0.3",
-		"vite": "^8.0.10"
+		"vite": "^8.0.13"
 	},
 	"overrides": {
 		"cookie": "^0.7.0"
