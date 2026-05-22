@@ -1,51 +1,42 @@
-# Svelte Quick Start
-The Svelte quick start project launches a blog app with content from Prepr.
+# sv
 
-Check out the [Stackblitz demo](https://stackblitz.com/edit/svelte-quick-start) for zero installation.
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-## Setup
+## Creating a project
 
-Make sure to install the dependencies:
+If you're seeing this, you've probably already done this step. Congrats!
 
-```bash
-# npm
-npm install
+```sh
+# create a new project
+npx sv create my-app
 ```
 
-## Add the environment file
-Copy the .env.example file in this directory to .env (which will be ignored by Git) by running the following command:
+To recreate this project with the same configuration:
 
-```bash
-cp .env.example .env
+```sh
+# recreate this project
+pnpm dlx sv@0.15.3 create --template minimal --no-types --install pnpm prepr-svelte
 ```
 
-## Update the environment file
-In the .env file replace `<YOUR-ACCESS-TOKEN>` with the Prepr access token from your environment with demo content.
+## Developing
 
-## Development Server
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-Start the development server.
-
-```bash
+```sh
 npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
 ```
 
-## Production
+## Building
 
-Build the application for production:
+To create a production version of your app:
 
-```bash
+```sh
 npm run build
 ```
 
-You can preview the production build with:
+You can preview the production build with `npm run preview`.
 
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://kit.svelte.dev/docs/building-your-app) for more information.
-
-## The end result
-
-![blog site end result](https://assets-site.prepr.io/74bgrcumcy41//svelte-blog-posts.png)
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
