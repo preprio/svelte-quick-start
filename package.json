@@ -1,13 +1,12 @@
 {
-	"name": "svelte-quick-start",
-	"private": true,
+	"name": "svelte",
 	"version": "0.0.1",
-	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
-		"prepare": "svelte-kit sync || echo ''"
+		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch"
 	},
 	"devDependencies": {
 		"@fontsource/fira-mono": "^5.2.7",
@@ -20,6 +19,7 @@
 		"typescript": "^6.0.3",
 		"vite": "^8.0.13"
 	},
+	"type": "module",
 	"overrides": {
 		"cookie": "^0.7.0"
 	}
