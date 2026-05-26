@@ -1,7 +1,8 @@
-import { PREPR_ENDPOINT } from '$env/static/private'
+import { env } from '$env/dynamic/private'
 
 const prepr = async (query, variables) => {
-    const response = await fetch(PREPR_ENDPOINT, {
+    const endpoint = env.PREPR_ENDPOINT || 'https://graphql.prepr.io/ac_e54beab08406dd41fcdead2bef10364f442559f67fe86ebb0ac7aa6e3a1a4605'
+    const response = await fetch(endpoint, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
