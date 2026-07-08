@@ -16,7 +16,7 @@
 		"@types/cookie": "^1.0.0",
 		"svelte": "^5.55.7",
 		"svelte-check": "^3.8.6",
-		"typescript": "^6.0.3",
+		"typescript": "^7.0.2",
 		"vite": "^8.0.16"
 	},
 	"type": "module",
